@@ -66,7 +66,7 @@ public class App {
         System.out.println("La cantidad de charlas es de " +  charlas.size());
         System.out.println("La cantidad de cursos es de " +  cursos.size());
 
-        System.out.println(evento1.calcularCostoMateriales(evento1.actividades));
+        System.out.println("Costo total: " + evento1.calcularCostoMateriales(evento1.actividades));
 
 
         System.out.println("Ingrese el tipo de actividad del que desea saber cuales hay");
@@ -75,7 +75,7 @@ public class App {
         int cc =  0;
 
         for ( Actividad act: evento1.actividades ) {
-            if ( claseaelegir.equals( act.getTipo() ) ) {
+            if ( claseaelegir.equalsIgnoreCase( act.getTipo() ) ) {
             System.out.println( act.getTitulo());
             cc++;
             }

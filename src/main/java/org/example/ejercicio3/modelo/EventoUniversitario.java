@@ -168,6 +168,8 @@ public class EventoUniversitario implements Serializable {
         }
 
         for  ( Actividad act: actividades ){
+            System.out.println(act.getTitulo() + " costo: ");
+            System.out.println(act.calcularCostoMateriales());
             total += act.calcularCostoMateriales();
         }
 

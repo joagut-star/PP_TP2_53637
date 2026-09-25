@@ -28,8 +28,8 @@ public class App {
 
         try {
             evento1.charlas.get(0).inscribir(Fran);
-//            evento1.charlas.get(0).inscribir(Tizi);
-//            evento1.talleres.get(0).inscribir(Valen);
+            evento1.charlas.get(0).inscribir(Tizi);
+            evento1.talleres.get(0).inscribir(Valen);
             evento1.talleres.get(0).inscribir(Fran);
 
         } catch (CupoExcedidoException e) {
